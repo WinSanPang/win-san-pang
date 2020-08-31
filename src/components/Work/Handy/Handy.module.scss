@@ -1,0 +1,34 @@
+@import "../../../scss/_fonts.scss";
+
+.Handy {
+  color: #00CDED;
+}
+
+.HandySections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.HandyCardContainer {
+  width: 40%;
+}
+
+.HandyCard {
+  font-size: $card-small;
+  text-shadow: 1.5px 1.5px 1px #00CDED;
+}
+
+.HandyCardDate {
+  font-size: $card-smaller;
+}
+
+@media (min-width: 850px) {
+  .HandyCard {
+    font-size: $card-mid;
+  }
+
+  .HandyCardDate {
+    font-size: $card-small;
+  }
+}

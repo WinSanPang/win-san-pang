@@ -1,0 +1,33 @@
+@import "../../../scss/_fonts.scss";
+
+.Card {
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 50px;
+  margin: 20px;
+  font-size: $card-small;
+}
+
+.CardLink {
+  text-decoration: none;
+  color: white;
+  width: 30%;
+}
+
+@media (min-width: 850px) {
+  .Card {
+    font-size: $card;
+  }
+
+  .Card:hover {
+    transform: scale(1.1);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+@media (min-width: 1250px) {
+  .Card {
+    font-size: $card-large;
+  }
+}

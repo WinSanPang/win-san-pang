@@ -1,0 +1,65 @@
+@import "../../../../../scss/colours";
+
+.NavigationItem {
+  margin: 10px 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 5%;
+  /* background-image: linear-gradient(to bottom right, $primary, $primary 50%, black 50%, black);
+  border-right: 3px solid white; */
+}
+
+.NavigationItem a {
+  color: $text-primary;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.NavigationItem:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin: 0 50px;
+}
+
+.NavigationItem:last-child:after {
+  opacity: 0;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+  color: $primary;
+}
+
+@media (min-width: 500px) {
+  .NavigationItem {
+    margin: 0 15px;
+    display: flex;
+    height: 90%;
+    width: auto;
+    align-items: center;
+  }
+
+  .NavigationItem a {
+    color: $text-primary;
+    height: 90%;
+    padding: 10px;
+  }
+
+  .NavigationItem a:hover {
+    cursor: pointer;
+  }
+
+  .NavigationItem a:hover,
+  .NavigationItem a:active,
+  .NavigationItem a.active {
+    border-bottom: solid $primary;
+    color: $primary;
+    height: 100%;
+    padding: 10px;
+  }
+}

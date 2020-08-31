@@ -1,0 +1,24 @@
+.Home {
+  text-align: center;
+  padding: 120px 100px;
+  width: 90vw;
+}
+
+.HomeHeader {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.Me {
+  width: 150px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.HomeSections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -1,0 +1,35 @@
+@import "../../../scss/_fonts.scss";
+
+.JustPark {
+  color: #1fa637;
+}
+
+.JustParkSections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.JustParkCardContainer {
+  width: 25%;
+}
+
+.JustParkCard {
+  font-size: $card-small;
+  height: 180px;
+  text-shadow: 1.5px 1.5px 1px #1fa637;
+}
+
+.JustParkCardDate {
+  font-size: $card-smaller;
+}
+
+@media (min-width: 850px) {
+  .JustParkCard {
+    font-size: $card-mid;
+  }
+
+  .JustParkCardDate {
+    font-size: $card-small;
+  }
+}

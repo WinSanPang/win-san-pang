@@ -1,0 +1,35 @@
+@import '../../../../scss/_colours.scss';
+
+.Sidebar {
+  position: fixed;
+  width: 280px;
+  max-width: 60%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background-color: $tertiary;
+  padding: 5%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+  text-align: left;
+}
+
+.Logo {
+  height: 20%;
+  margin-bottom: 10%;
+}
+
+.Open {
+  transform: translateX(0);
+}
+
+.Close {
+  transform: translateX(-100%);
+}
+
+@media (min-width: 500px) {
+  .Sidebar {
+    display: none;
+  }
+}

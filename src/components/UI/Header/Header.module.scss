@@ -1,0 +1,19 @@
+@import "../../../scss/_fonts.scss";
+@import "../../../scss/_colours.scss";
+
+.Header {
+  font: $header-text-small;
+  color: $header-primary;
+}
+
+@media (min-width: 650px) {
+  .Header {
+    font: $header-text;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Header {
+    font: $header-text-large;
+  }
+}

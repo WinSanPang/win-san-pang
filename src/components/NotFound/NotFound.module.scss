@@ -1,0 +1,15 @@
+@import '../../scss/_colours.scss';
+
+.NotFound {
+  height: 100vh;
+  background: $background-primary;
+}
+
+.NotFound a {
+  color: $primary;
+  text-decoration: none;
+}
+
+.NotFoundSubheader {
+  padding-top: 5%;
+}

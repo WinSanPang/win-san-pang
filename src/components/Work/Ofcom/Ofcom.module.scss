@@ -1,0 +1,34 @@
+@import "../../../scss/_fonts.scss";
+
+.Ofcom {
+  color: #A51F44;
+}
+
+.OfcomSections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.OfcomCardContainer {
+  width: 40%;
+}
+
+.OfcomCard {
+  font-size: $card-small;
+  text-shadow: 1.5px 1.5px 1px #A51F44;
+}
+
+.OfcomCardDate {
+  font-size: $card-smaller;
+}
+
+@media (min-width: 850px) {
+  .OfcomCard {
+    font-size: $card-mid;
+  }
+
+  .OfcomCardDate {
+    font-size: $card-small;
+  }
+}

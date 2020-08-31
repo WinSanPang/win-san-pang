@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+$primary-font: "Lobster", cursive;
+
+$header-text-small: 500 40px $primary-font;
+$header-text: 500 80px $primary-font;
+$header-text-large: 500 100px $primary-font;
+
+$subheader-text-small: 200 30px $primary-font;
+$subheader-text: 200 60px $primary-font;
+$subheader-text-large: 200 60px $primary-font;
+
+$photograph-text-small: 500 20px $primary-font;
+$photograph-text: 500 40px $primary-font;
+
+$profile-photo-text: 500 25px $primary-font;
+$profile-photo-text-large: 500 30px $primary-font;
+
+$quote-marks-small: 400 80px "Great Vibes", cursive;
+$quote-marks: 400 120px "Great Vibes", cursive;
+$quote-marks-large: 400 200px "Great Vibes", cursive;
+
+$paragraph-small: 10px;
+$paragraph: 16px;
+$paragraph-large: 17px;
+
+$profile-quote-small: 10px;
+$profile-quote: 16px;
+
+$card-smaller: 15px;
+$card-small: 20px;
+$card-mid: 25px;
+$card: 30px;
+$card-big: 35px;
+$card-large: 40px;
+
+$footer: 14px;
+$footer-small: 10px;
+
+$button-text-small: 200 20px $primary-font;
+$button-text: 200 60px $primary-font;
