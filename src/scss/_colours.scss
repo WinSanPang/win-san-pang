@@ -8,12 +8,12 @@ $dark-red-two: #3f0000;
 $black: #151515;
 $white: white;
 $blue: steelblue;
-$darkblue: darkblue;
+$lightblue: #3E9CDA;
 
 // Allias
 
 $primary: $blue !default;
-$secondary: $darkblue;
+$secondary: $lightblue;
 $tertiary: $dark-red-two;
 $fourth: $medium-red-two;
 $background-primary: $black;

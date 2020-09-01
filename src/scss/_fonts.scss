@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 $primary-font: "Lobster", cursive;
+$book-font: "Lora", serif;
 
 $header-text-small: 500 40px $primary-font;
 $header-text: 500 80px $primary-font;
@@ -35,8 +37,14 @@ $card: 30px;
 $card-big: 35px;
 $card-large: 40px;
 
-$footer: 14px;
+$chapter-title-small: 700 20px $book-font;
+$chapter-title: 700 25px $book-font;
+$chapter-title-large: 700 30px $book-font;
+
+$book-large: 700 3em/0.65 $book-font;
+
 $footer-small: 10px;
+$footer: 14px;
 
 $button-text-small: 200 20px $primary-font;
 $button-text: 200 60px $primary-font;

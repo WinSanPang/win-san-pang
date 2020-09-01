@@ -12,7 +12,7 @@ const Work = () => {
   return (
     <div className={classes.Work}>
       <div className={classes.WorkHeader}>
-        <Header>Work 🧑🏻‍💻</Header>
+        <Header>Work <span role="img" aria-labelledby="technologist-emoji">🧑🏻‍💻</span></Header>
       </div>
       <Paragraph>
         A Junior Frontend Engineer who, having previously spent 5+ years working
