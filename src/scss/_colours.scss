@@ -1,22 +1,18 @@
 // Colours
 
-$red: red;
-$medium-red: #d90000;
-$medium-red-two: #c00000;
-$dark-red: #580000;
-$dark-red-two: #3f0000;
-$black: #151515;
 $white: white;
+$black: #151515;
 $blue: steelblue;
 $lightblue: #3E9CDA;
+$dark-blue: #02162f;
+$sea-blue: #06515b;
 
 // Allias
 
 $primary: $blue !default;
 $secondary: $lightblue;
-$tertiary: $dark-red-two;
-$fourth: $medium-red-two;
-$background-primary: $black;
+$tertiary: $dark-blue;
+$background-primary: $sea-blue;
 $text-primary: $white;
 $text-secondary: $black;
 $header-primary: $white;

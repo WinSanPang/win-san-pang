@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import classes from './Sidebar.module.scss';
-import Aux from '../../../../hoc/Aux';
+import classes from "./Sidebar.module.scss";
 /* import Logo from '../../Logo/Logo'; */
-import NavigationItems from '../NavigationItems/NavigationItems';
-import Backdrop from '../../../UI/Backdrop/Backdrop';
+import NavigationItems from "../NavigationItems/NavigationItems";
+import Backdrop from "../../../UI/Backdrop/Backdrop";
 
 const sidebar = (props) => {
   let attachedClasses = [classes.Sidebar, classes.Close];
@@ -13,19 +12,15 @@ const sidebar = (props) => {
   }
 
   return (
-    <Aux>
-      <Backdrop 
-        show={props.open} 
-        clicked={props.closed}/>
-        <div className={attachedClasses.join(' ')} onClick={props.closed}>
-          <div className={classes.Logo}>
-            {/* <Logo/> */}
-          </div>
+    <>
+      <Backdrop show={props.open} clicked={props.closed} />
+      <div className={attachedClasses.join(" ")} onClick={props.closed}>
+        <div className={classes.Logo}>{/* <Logo/> */}</div>
         <nav>
-          <NavigationItems/>
+          <NavigationItems />
         </nav>
       </div>
-    </Aux>
+    </>
   );
 };
 

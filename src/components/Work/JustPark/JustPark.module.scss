@@ -18,6 +18,10 @@
   font-size: $card-small;
   height: 180px;
   text-shadow: 1.5px 1.5px 1px #1fa637;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .JustParkCardDate {

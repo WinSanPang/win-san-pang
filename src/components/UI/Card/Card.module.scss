@@ -6,12 +6,37 @@
   padding: 50px;
   margin: 20px;
   font-size: $card-small;
+  color: white;
 }
 
-.CardLink {
-  text-decoration: none;
+.CardSubheader {
+  font-size: $card-subheader-text-small;
+}
+
+.ModalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.ModalList {
   color: white;
-  width: 30%;
+  width: 60%;
+  margin-right: 30px;
+  text-align: left;
+  list-style: none;
+}
+
+.ModalListItem {
+  padding: 10px;
+}
+
+.ModalListItem::before {
+  content: "👨🏻‍💻";
+  padding-right: 20px;
+  margin-left: -35px;
+  font-size: 15px;
 }
 
 @media (min-width: 850px) {
@@ -24,10 +49,18 @@
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
+
+  .CardSubheader {
+    font-size: $card-subheader-text;
+  }
 }
 
 @media (min-width: 1250px) {
   .Card {
     font-size: $card-large;
+  }
+
+  .CardSubheader {
+    font-size: $card-subheader-text-large;
   }
 }

@@ -13,8 +13,28 @@ $subheader-text-small: 200 30px $primary-font;
 $subheader-text: 200 60px $primary-font;
 $subheader-text-large: 200 60px $primary-font;
 
+$card-subheader-text-small: 20px;
+$card-subheader-text: 40px;
+$card-subheader-text-large: 50px;
+
+$card-smaller: 15px;
+$card-small: 20px;
+$card-mid: 25px;
+$card: 30px;
+$card-big: 35px;
+$card-large: 40px;
+
+$chapter-title-small: 700 20px $book-font;
+$chapter-title: 700 25px $book-font;
+$chapter-title-large: 700 30px $book-font;
+
+$book-large: 700 3em/0.65 $book-font;
+
 $photograph-text-small: 500 20px $primary-font;
 $photograph-text: 500 40px $primary-font;
+
+$caption-text-small: 10px;
+$caption-text: 15px;
 
 $profile-photo-text: 500 25px $primary-font;
 $profile-photo-text-large: 500 30px $primary-font;
@@ -29,19 +49,6 @@ $paragraph-large: 17px;
 
 $profile-quote-small: 10px;
 $profile-quote: 16px;
-
-$card-smaller: 15px;
-$card-small: 20px;
-$card-mid: 25px;
-$card: 30px;
-$card-big: 35px;
-$card-large: 40px;
-
-$chapter-title-small: 700 20px $book-font;
-$chapter-title: 700 25px $book-font;
-$chapter-title-large: 700 30px $book-font;
-
-$book-large: 700 3em/0.65 $book-font;
 
 $footer-small: 10px;
 $footer: 14px;

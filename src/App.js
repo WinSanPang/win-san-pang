@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import Work from "./pages/Work/Work";
 import Education from "./pages/Education/Education";
 import Contact from "./pages/Contact/Contact";
+import Hobbies from "./pages/Hobbies/Hobbies";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route path="/skills" exact render={() => {}} />
           <Route path="/work" exact render={() => <Work />} />
           <Route path="/education" exact render={() => <Education />} />
-          <Route path="/hobbies" exact render={() => {}} />
+          <Route path="/hobbies" exact render={() => <Hobbies />} />
           <Route path="/portfolio" exact render={() => {}} />
           <Route path="/contact" exact render={() => <Contact />} />
         </Switch>

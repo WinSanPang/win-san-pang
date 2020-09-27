@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import classes from "./Home.module.scss";
 import Header from "../../components/UI/Header/Header";
@@ -33,9 +34,11 @@ const Home = () => {
       </Paragraph>
       <div className={classes.HomeSections}>
         {sections.map((item) => (
-          <Card key={item.name} link={item.link}>
-            {item.name} {item.emoji}
-          </Card>
+          <Link to={item.link} className={`${classes.CardLink}`}>
+            <Card key={item.name}>
+              {item.name} {item.emoji}
+            </Card>
+          </Link>
         ))}
       </div>
     </div>
