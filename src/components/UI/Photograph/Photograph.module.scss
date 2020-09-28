@@ -11,50 +11,50 @@
 }
 
 .Photograph:first-child,
-.Photograph:nth-child(4) {
+.Photograph:nth-child(7) {
   -ms-transform: rotate(20deg); /* IE 9 */
   transform: rotate(15deg);
   z-index: 1;
 }
 
-.Photograph:nth-child(2),
-.Photograph:nth-child(5) {
+.Photograph:nth-child(3),
+.Photograph:nth-child(9) {
   margin-top: 100px;
 }
 
-.Photograph:nth-child(2):hover,
-.Photograph:nth-child(5):hover {
+.Photograph:nth-child(3):hover,
+.Photograph:nth-child(9):hover {
   margin-top: 110px;
 }
 
-.Photograph:nth-child(3),
-.Photograph:nth-child(6) {
+.Photograph:nth-child(5),
+.Photograph:nth-child(11) {
   -ms-transform: rotate(-20deg); /* IE 9 */
   transform: rotate(-15deg);
 }
 
 .Photograph:first-child:hover,
-.Photograph:nth-child(4):hover {
+.Photograph:nth-child(7):hover {
   margin-right: 50px;
   margin-left: 50px;
 }
 
-.Photograph:nth-child(3):hover,
-.Photograph:nth-child(6):hover {
+.Photograph:nth-child(5):hover,
+.Photograph:nth-child(11):hover {
   margin-left: 70px;
 }
 
 .Photograph:first-child,
-.Photograph:nth-child(3),
-.Photograph:nth-child(4),
-.Photograph:nth-child(6) {
+.Photograph:nth-child(5),
+.Photograph:nth-child(7),
+.Photograph:nth-child(11) {
   margin-top: 30px;
 }
 
 .Photograph:first-child:hover,
-.Photograph:nth-child(3):hover,
-.Photograph:nth-child(4):hover,
-.Photograph:nth-child(6):hover {
+.Photograph:nth-child(5):hover,
+.Photograph:nth-child(7):hover,
+.Photograph:nth-child(11):hover {
   margin-top: 105px;
   margin-bottom: 20px;
 }
