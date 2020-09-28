@@ -20,6 +20,7 @@ const sections = [
     photo:
       "https://scontent.flhr3-2.fna.fbcdn.net/v/t1.0-9/120344782_10224366460252887_8138223664337301961_n.jpg?_nc_cat=104&_nc_sid=0debeb&_nc_ohc=Ku5-VycZvSIAX-Y8Rek&_nc_ht=scontent.flhr3-2.fna&oh=9ff9efbc524a86782edc16bc774c2e2e&oe=5F9861B2",
     photoCaption: "Dressed up as a Vampire for the Handy Halloween Party 🧛",
+    alt: "halloween-party-handy-team-photo",
   },
 ];
 
@@ -39,6 +40,7 @@ const Handy = () => {
             point3={item.description.point3}
             photo={item.photo}
             photoCaption={item.photoCaption}
+            alt={item.alt}
           >
             <b>{item.jobTitle}</b>
             <div className={classes.HandyCardDate}>

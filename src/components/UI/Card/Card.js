@@ -18,6 +18,7 @@ const Card = ({
   point6,
   photo,
   photoCaption,
+  alt,
 }) => {
   const [show, setShow] = useState(false);
 
@@ -42,7 +43,7 @@ const Card = ({
             {point6 && <li className={classes.ModalListItem}>{point6}</li>}
           </ul>
           <Photograph modal>
-            <img src={photo}></img>
+            <img src={photo} alt={alt}></img>
             <p>{photoCaption}</p>
           </Photograph>
         </div>

@@ -21,6 +21,7 @@ const sections = [
       "https://scontent.flhr3-2.fna.fbcdn.net/v/t1.0-9/120344782_10224366368490593_669096003840558971_n.jpg?_nc_cat=102&_nc_sid=0debeb&_nc_ohc=7nvhQro9sQAAX9eoODp&_nc_ht=scontent.flhr3-2.fna&oh=6a5f5cc6db8f6bf95fc7acc51ce0da53&oe=5F98370B",
     photoCaption:
       "Featuring on the Ofcom Christmas tree for my love of Lego & Pokemon 🎄",
+    alt: "me-on-ofcom-christmas-tree",
   },
 ];
 
@@ -40,6 +41,7 @@ const Ofcom = () => {
             point3={item.description.point3}
             photo={item.photo}
             photoCaption={item.photoCaption}
+            alt={item.alt}
           >
             <b>{item.jobTitle}</b>
             <div className={classes.OfcomCardDate}>

@@ -90,6 +90,11 @@
   font-size: $caption-text-small;
 }
 
+.ModalPhotosContainer {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 850px) {
   .Photograph {
     max-height: 300px;

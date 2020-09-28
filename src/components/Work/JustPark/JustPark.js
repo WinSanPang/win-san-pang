@@ -23,6 +23,7 @@ const sections = [
     photo:
       "https://scontent.flhr3-1.fna.fbcdn.net/v/t1.0-9/86793569_10222154382472325_2103051300789813248_n.jpg?_nc_cat=110&_nc_sid=730e14&_nc_ohc=YF7DfjG97LgAX9w_cnW&_nc_ht=scontent.flhr3-1.fna&oh=da98120345109b262159b23c00b56681&oe=5F7AA3E8",
     photoCaption: "",
+    alt: "",
   },
   {
     jobTitle: "Associate QA Engineer",
@@ -45,6 +46,7 @@ const sections = [
     photo:
       "https://scontent.flhr3-1.fna.fbcdn.net/v/t1.0-9/120224974_10224354294388748_7187507406412787078_n.jpg?_nc_cat=101&_nc_sid=0debeb&_nc_ohc=ODSn9h07lKwAX-xOVFp&_nc_ht=scontent.flhr3-1.fna&oh=7dc8bf2bceb8dfd9fa7e0c5660e24184&oe=5F96A0AF",
     photoCaption: "Some classic QA & Dev banter 🤣",
+    alt: "qa-dev-banter",
   },
   {
     jobTitle: "Senior Customer Happiness Associate",
@@ -65,6 +67,7 @@ const sections = [
       "https://scontent.flhr3-2.fna.fbcdn.net/v/t1.0-9/120370589_10224366157885328_3401656235657117126_o.jpg?_nc_cat=104&_nc_sid=0debeb&_nc_ohc=6sZRk6xLdAsAX_Rv8Ev&_nc_ht=scontent.flhr3-2.fna&oh=556f09f4489e4c6630da6ecca207aa6d&oe=5F9790C2",
     photoCaption:
       "Getting in the Chrismas spirit with fellow Customer Happiness colleagues 🤶🎅☃️",
+    alt: "christmas-party-ch-team-photo",
   },
   {
     jobTitle: "Customer Happiness Associate",
@@ -81,6 +84,7 @@ const sections = [
     photo:
       "https://scontent.flux1-1.fna.fbcdn.net/v/t1.0-9/120234611_10224354960725406_6149354717313191100_n.jpg?_nc_cat=111&_nc_sid=0debeb&_nc_ohc=zHDfcKS6PkIAX8RXH73&_nc_ht=scontent.flux1-1.fna&oh=926ab2e0706f3a48a6587f21e3d95595&oe=5F943B99",
     photoCaption: "Lovely feedback I received from happy JustPark customers 🥰",
+    alt: "justpark-customer-feedback",
   },
 ];
 
@@ -103,6 +107,7 @@ const JustPark = () => {
             point6={item.description.point6}
             photo={item.photo}
             photoCaption={item.photoCaption}
+            alt={item.alt}
           >
             <b>{item.jobTitle}</b>
             <div className={classes.JustParkCardDate}>{item.dates}</div>
