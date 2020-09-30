@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import classes from "./Photograph.module.scss";
 import Modal from "../Modal/Modal";
+import Divider from "../Divider/Divider";
 import PhotoWithCaption from "../PhotoWithCaption/PhotoWithCaption";
 
 const Photograph = ({
@@ -13,6 +14,7 @@ const Photograph = ({
   modalPhoto2,
   modalPhotoCaption2,
   alt2,
+  description,
 }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -37,6 +39,8 @@ const Photograph = ({
             caption={modalPhotoCaption2}
           />
         </div>
+        <Divider short />
+        <p className={classes.ModalDescription}>{description}</p>
       </Modal>
     </>
   );

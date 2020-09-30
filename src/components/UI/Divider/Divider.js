@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import classes from './Divider.module.scss';
+import classes from "./Divider.module.scss";
 
-const Divider = () => (
-  <div className={classes.DividerContainer}>
-    <div className={classes.Divider}></div>
-  </div>
-)
+const Divider = ({ short }) => (
+  <div className={short ? classes.DividerShort : classes.Divider}></div>
+);
 
 export default Divider;
