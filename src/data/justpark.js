@@ -6,11 +6,15 @@ import CHFeedback from "../assets/images/work/ch-feedback.png";
 export const justpark = [
   {
     jobTitle: "Associate Frontend Engineer",
-    dates: "Feb 2020 - Present",
+    dates: "Jan 2020 - Present",
     emoji: "💻",
     description: {
       point1:
-        "Developing, improving and maintaining the codebase for the company’s five core web applications. Contribution included creating UI components, reducers and full page flows.",
+        "Responsible for developing, improving and maintaining the codebase\n" +
+        "for the company’s five core web applications. Contribution included\n" +
+        "creating UI components, reducers and full page flows using React 16\n" +
+        "and Redux Toolkit, as well as updating our automated test suites (Jest,\n" +
+        "Enzyme, Mocha, Cypress).",
       point2:
         "Collaborating with Backend, QA and Product teams to ensure we delivered high quality features and product improvements in a timely manner.",
       point3:

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 import classes from "./Photograph.module.scss";
 import Modal from "../Modal/Modal";
-import Divider from "../Divider/Divider";
-import PhotoWithCaption from "../PhotoWithCaption/PhotoWithCaption";
+import PortfolioModal from "../PortfolioModal/PortfolioModal";
 
 const Photograph = ({
   children,
@@ -27,20 +26,15 @@ const Photograph = ({
         {children}
       </div>
       <Modal show={showModal} modalClosed={() => setShowModal(false)}>
-        <div className={classes.ModalPhotosContainer}>
-          <PhotoWithCaption
-            src={modalPhoto1}
-            alt={alt1}
-            caption={modalPhotoCaption1}
-          />
-          <PhotoWithCaption
-            src={modalPhoto2}
-            alt={alt2}
-            caption={modalPhotoCaption2}
-          />
-        </div>
-        <Divider short />
-        <p className={classes.ModalDescription}>{description}</p>
+        <PortfolioModal
+          modalPhoto1={modalPhoto1}
+          alt1={alt1}
+          modalPhotoCaption1={modalPhotoCaption1}
+          modalPhoto2={modalPhoto2}
+          alt2={alt2}
+          modalPhotoCaption2={modalPhotoCaption2}
+          description={description}
+        />
       </Modal>
     </>
   );

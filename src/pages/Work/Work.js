@@ -20,14 +20,15 @@ const Work = () => {
         </Header>
       </div>
       <Paragraph>
-        A Junior Frontend Engineer who, having previously spent 5+ years working
-        in customer service, self-taught and progressed into web development.
-        Skilled in several programming languages whilst also possessing strong
-        interpersonal, problem-solving and outstanding customer service skills.
-        Demonstrated commitment, self-motivation, and initiative in previous
-        work experience, academic work, and extra-curricular roles. Feel free to
-        click on the cards below to find out more about my roles and
-        responsibilities.
+        An Associate Frontend Engineer who, having previously spent 5+ years
+        working in customer service, self-taught and progressed into web
+        development. Skilled in several programming languages whilst also
+        possessing strong interpersonal, problem-solving and outstanding
+        customer service skills. Demonstrated commitment, self-motivation, and
+        initiative in previous work experience, academic work, and
+        extra-curricular activities. Feel free to click on the cards below to
+        find out more about my roles and responsibilities throughout the last
+        few years.
       </Paragraph>
       <Divider />
       <JustPark />

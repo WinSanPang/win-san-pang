@@ -3,16 +3,23 @@
 $white: white;
 $black: #151515;
 $blue: steelblue;
-$lightblue: #3E9CDA;
+$bright-blue: #78caff;
+$light-blue: #3E9CDA;
 $dark-blue: #02162f;
 $sea-blue: #06515b;
+$red: red;
+$teal: #07686A;
+$orange: #E68D05;
 
 // Allias
 
 $primary: $blue !default;
-$secondary: $lightblue;
+$secondary: $light-blue;
 $tertiary: $dark-blue;
 $background-primary: $sea-blue;
 $text-primary: $white;
 $text-secondary: $black;
 $header-primary: $white;
+$the-cerberus-affair: $red;
+$connected-learning-teal: $teal;
+$connected-learning-orange: $orange;

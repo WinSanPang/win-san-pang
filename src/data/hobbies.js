@@ -19,7 +19,7 @@ import SoyaSauceChickenWings from "../assets/images/hobbies/soya-sauce-chicken-w
 
 export const hobbies = [
   {
-    name: "Travelling",
+    name: "Travelling ✈️",
     img: NongNoochGarden,
     alt: "nong-nooch-garden",
     caption: "The beautiful Nong Nooch Garden in Pattaya, Thailand",
@@ -37,7 +37,7 @@ export const hobbies = [
       "Aside from frequent trips to Hong Kong, I've also enjoyed exploring other parts of Asia, including Thailand, Singapore and Japan, as well as Europe, including Hungary, Greece and Iceland. I found that travelling has really expanded my horizons and understanding of different cultures, and with each new destination I discover new flavours, experiences and sensations that makes our world beautifully colourful.",
   },
   {
-    name: "Swimming",
+    name: "Swimming 🏊🏻",
     img: SwimmingInMallorca1,
     alt: "swimming-in-mallorca",
     caption: "Swimming in the sea for the first time ever in Mallorca",
@@ -55,7 +55,7 @@ export const hobbies = [
       "Re-learning to swim reaffirmed my belief that it's never too late to learn and I feel this mirrors my coding journey. I started learning to code in 2018, aged 26, which isn't an 'old' age to learn, but I'm certainly older than the fresh graduates of Computer Science. I didn't let this hold me back and, in January 2020, my hard work and determination paid off as I finally earned the title of Associate Frontend Engineer. These days, I also take every opportunity to code, whether it be for work or in my personal time for fun :)",
   },
   {
-    name: "Photography",
+    name: "Photography 📸",
     img: SingaporeExhibition,
     alt: "singapore-exhibition",
     caption:
@@ -72,7 +72,7 @@ export const hobbies = [
       "I became interested in photography and photo-editing in my teen years, enjoying the fun of capturing the perfect shot on my camera and touching up the pictures in Photoshop. My friends like to call me 'The Photographer of the Group' and often leave it up to me to take pictures of our meetups and travels - I don't mind though, I love capturing happy memories.",
   },
   {
-    name: "Lego building",
+    name: "Lego building 🧩",
     img: LegoSpiderman,
     alt: "lego-spider-man",
     caption:
@@ -89,7 +89,7 @@ export const hobbies = [
       "I've always loved the freedom and creativity of building with Lego. I find it tremendously satifying to start with a pile of Lego bricks and build my way up to a completed model, which probably explains why I've come to love coding and building websites from scratch. When I'm building Lego, my mind is totally focused but also relaxed. Sometimes, it can be a really good test of my patience, not dissimilar to trying to crack bug fixes for legacy codebases...",
   },
   {
-    name: "Theatre",
+    name: "Theatre 🎭",
     img: MischiefCast,
     alt: "mischief-cast",
     caption: "Meeting the awesome and very funny Mischief Theatre cast",
@@ -105,7 +105,7 @@ export const hobbies = [
       "In 2018, I watched over 15 theatre performances - needless to say, I'm a big fan of theatre, especially Mischief Theatre. Having watched all their different productions, both on stage and on TV, to date, I really love their creative performances that are always guaranteed to be laugh out loud funny. I've also enjoyed converting family and friends to fellow Mischief Fans over the years.",
   },
   {
-    name: "Cooking",
+    name: "Cooking 🍱",
     img: SushiRiceBowl,
     alt: "sushi-rice-bowl",
     caption: "Lovingly made crabstick sushi rice salad bowl and prawn nigiri",

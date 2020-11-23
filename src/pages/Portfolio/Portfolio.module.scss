@@ -1,0 +1,48 @@
+@import "../../scss/colours.scss";
+@import "../../scss/fonts.scss";
+
+.Portfolio {
+  text-align: center;
+  padding: 120px 100px;
+  width: 90vw;
+}
+
+.PortfolioSections {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.PortfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: center;
+}
+
+.PortfolioCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.PortfolioImages {
+  width: 60%;
+  align-self: center;
+}
+
+.TheCerberusAffair {
+  font: 500 50px $the-cerberus-affair-font;
+  color: red;
+  text-shadow: -3px 1px 3px $black, 3px 3px 3px $black, 3px -2px 0 $black,
+  -1px -1px 0 $black;
+}
+
+.ConnectedLearning {
+  font: 500 50px $connected-learning-font;
+  color: $connected-learning-orange;
+  text-shadow: -3px 1px 3px $connected-learning-teal, 3px 3px 3px $connected-learning-teal, 3px -2px 0 $connected-learning-teal,
+  -1px -1px 0 $connected-learning-teal;
+}

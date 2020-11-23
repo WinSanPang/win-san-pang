@@ -1,0 +1,43 @@
+@import "../../../scss/_fonts.scss";
+
+.WorkModalSubheader {
+  font-size: $work-modal-subheader-text-small;
+}
+
+@media (min-width: 850px) {
+  .WorkModalSubheader {
+    font-size: $work-modal-subheader-text;
+  }
+}
+
+@media (min-width: 1250px) {
+  .WorkModalSubheader {
+    font-size: $work-modal-subheader-text-large;
+  }
+}
+
+.WorkModalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.WorkModalList {
+  color: white;
+  width: 60%;
+  margin-right: 30px;
+  text-align: left;
+  list-style: none;
+}
+
+.WorkModalListItem {
+  padding: 10px;
+}
+
+.WorkModalListItem::before {
+  content: "👨🏻‍💻";
+  padding-right: 20px;
+  margin-left: -35px;
+  font-size: 15px;
+}

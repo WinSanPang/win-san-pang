@@ -1,10 +1,17 @@
-@import "../../../scss/_fonts.scss";
+@import "../../../scss/fonts.scss";
+@import "../../../scss/colours.scss";
+
 
 .Paragraph {
   padding: 3% 10%;
   line-height: 1.6;
   word-spacing: 3px;
   font-size: $paragraph-small;
+}
+
+.Paragraph a {
+  text-decoration: none;
+  color: $bright-blue;
 }
 
 @media (min-width: 850px) {

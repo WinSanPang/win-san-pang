@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 import classes from "./Card.module.scss";
 import Modal from "../Modal/Modal";
-import Subheader from "../../UI/Subheader/Subheader";
-import Photograph from "../Photograph/Photograph";
+import PortfolioModal from "../PortfolioModal/PortfolioModal";
+import WorkModal from "../../Work/WorkModal/WorkModal";
 
 const Card = ({
   children,
@@ -19,6 +19,14 @@ const Card = ({
   photo,
   photoCaption,
   alt,
+  portfolio,
+  brand,
+  modalPhoto1,
+  alt1,
+  modalPhoto2,
+  alt2,
+  description,
+  link,
 }) => {
   const [show, setShow] = useState(false);
 
@@ -31,22 +39,30 @@ const Card = ({
         {children}
       </div>
       <Modal show={show} modalClosed={() => setShow(false)}>
-        <Subheader className={classes.CardSubheader}>{companyName}</Subheader>
-        <div className={classes.ModalContainer}>
-          <ul className={classes.ModalList}>
-            <h3>Key responsibilities:</h3>
-            <li className={classes.ModalListItem}>{point1}</li>
-            <li className={classes.ModalListItem}>{point2}</li>
-            <li className={classes.ModalListItem}>{point3}</li>
-            {point4 && <li className={classes.ModalListItem}>{point4}</li>}
-            {point5 && <li className={classes.ModalListItem}>{point5}</li>}
-            {point6 && <li className={classes.ModalListItem}>{point6}</li>}
-          </ul>
-          <Photograph modal>
-            <img src={photo} alt={alt}></img>
-            <p>{photoCaption}</p>
-          </Photograph>
-        </div>
+        {portfolio ? (
+          <PortfolioModal
+            brand={brand}
+            modalPhoto1={modalPhoto1}
+            alt1={alt1}
+            modalPhoto2={modalPhoto2}
+            alt2={alt2}
+            description={description}
+            link={link}
+          />
+        ) : (
+          <WorkModal
+            companyName={companyName}
+            point1={point1}
+            point2={point2}
+            point3={point3}
+            point4={point4}
+            point5={point5}
+            point6={point6}
+            photo={photo}
+            photoCaption={photoCaption}
+            alt={alt}
+          />
+        )}
       </Modal>
     </div>
   );
@@ -55,6 +71,7 @@ const Card = ({
 Card.defaultProps = {
   containerClassName: "",
   cardClassName: "",
+  portfolio: false,
 };
 
 export default Card;

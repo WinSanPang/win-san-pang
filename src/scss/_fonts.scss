@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 $primary-font: "Lobster", cursive;
 $book-font: "Lora", serif;
+$the-cerberus-affair-font: 'Oswald', sans-serif;
+$connected-learning-font: 'Arial', sans-serif;
 
 $header-text-small: 500 40px $primary-font;
 $header-text: 500 80px $primary-font;
@@ -13,9 +16,9 @@ $subheader-text-small: 200 30px $primary-font;
 $subheader-text: 200 60px $primary-font;
 $subheader-text-large: 200 60px $primary-font;
 
-$card-subheader-text-small: 20px;
-$card-subheader-text: 40px;
-$card-subheader-text-large: 50px;
+$work-modal-subheader-text-small: 20px;
+$work-modal-subheader-text: 40px;
+$work-modal-subheader-text-large: 50px;
 
 $card-smaller: 15px;
 $card-small: 20px;
