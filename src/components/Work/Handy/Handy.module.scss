@@ -11,7 +11,7 @@
 }
 
 .HandyCardContainer {
-  width: 40%;
+  width: 100%;
 }
 
 .HandyCard {
@@ -23,7 +23,11 @@
   font-size: $card-smaller;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 768px) {
+  .HandyCardContainer {
+    width: 40%;
+  }
+
   .HandyCard {
     font-size: $card-mid;
   }

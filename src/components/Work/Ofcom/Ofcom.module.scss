@@ -8,10 +8,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .OfcomCardContainer {
-  width: 40%;
+  width: 100%;
 }
 
 .OfcomCard {
@@ -23,7 +24,11 @@
   font-size: $card-smaller;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 768px) {
+  .OfcomCardContainer {
+    width: 40%;
+  }
+
   .OfcomCard {
     font-size: $card-mid;
   }

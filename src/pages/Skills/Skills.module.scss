@@ -1,0 +1,30 @@
+@import "../../scss/colours.scss";
+
+.Skills {
+  text-align: center;
+  padding: 50px 40px;
+}
+
+.SkillsProgramming {
+  color: $sea-blue;
+}
+
+.SkillsGeneral {
+  color: $dark-green;
+}
+
+.SkillsCreative {
+  color: $purple;
+}
+
+@media (min-width: 768px) {
+  .Skills {
+    padding: 50px 40px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .Skills {
+    padding: 120px 100px;
+  }
+}

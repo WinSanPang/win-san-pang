@@ -1,11 +1,12 @@
 import React from "react";
 
 import classes from "./Portfolio.module.scss";
-import { portfolio } from "../../data/portfolio";
+import { portfolios } from "../../data/portfolio";
 import Header from "../../components/UI/Header/Header";
 import Divider from "../../components/UI/Divider/Divider";
 import Paragraph from "../../components/UI/Paragraph/Paragraph";
 import Card from "../../components/UI/Card/Card";
+import Button from "../../components/UI/Button/Button";
 
 const Portfolio = () => {
   return (
@@ -22,34 +23,48 @@ const Portfolio = () => {
       </Paragraph>
       <Divider />
       <div className={classes.PortfolioSections}>
-        {portfolio.map((item) => (
+        {portfolios.map((portfolio) => (
           <Card
-            key={item.name}
+            key={portfolio.name}
             portfolio
             containerClassName={classes.PortfolioContainer}
-            cardClassName={classes.PortfolioCard}
-            brand={item.brand}
-            modalPhoto1={item.modalPhoto1}
-            modalPhotoAlt1={item.modalPhotoAlt1}
-            modalPhoto2={item.modalPhoto2}
-            modalPhotoAlt2={item.modalPhotoAlt2}
-            description={item.description.split("\\n")}
-            link={item.link}
+            cardClassName={
+              portfolio.brand === "TCA"
+                ? classes.TheCerberusAffairPortfolioCard
+                : classes.ConnectedLearningPortfolioCard
+            }
+            brand={portfolio.brand}
+            modalPhoto1={portfolio.modalPhoto1}
+            modalPhotoAlt1={portfolio.modalPhotoAlt1}
+            modalPhoto2={portfolio.modalPhoto2}
+            modalPhotoAlt2={portfolio.modalPhotoAlt2}
+            description={portfolio.description.split("\\n")}
+            link={portfolio.link}
           >
             <img
-              src={item.photo}
-              alt={item.alt}
+              src={portfolio.photo}
+              alt={portfolio.alt}
               className={classes.PortfolioImages}
             />
-            <p
-              className={
-                item.brand === "TCA"
-                  ? classes.TheCerberusAffair
-                  : classes.ConnectedLearning
-              }
-            >
-              {item.name}
-            </p>
+            <div className={classes.PortfolioDetails}>
+              <p
+                className={
+                  portfolio.brand === "TCA"
+                    ? classes.TheCerberusAffair
+                    : classes.ConnectedLearning
+                }
+              >
+                {portfolio.name}
+              </p>
+              <Button brand={portfolio.brand}>{portfolio.skills.skill1}</Button>
+              <Button brand={portfolio.brand}>{portfolio.skills.skill2}</Button>
+              <Button brand={portfolio.brand}>{portfolio.skills.skill3}</Button>
+              {portfolio.skills.skill4 && (
+                <Button brand={portfolio.brand}>
+                  {portfolio.skills.skill4}
+                </Button>
+              )}
+            </div>
           </Card>
         ))}
       </div>
@@ -58,3 +73,7 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+//// Add skills used in the modal so it's clearer. Skills for TCA used React, React Hooks, SCSS, Photoshop
+// CL used React, SCSS, Photoshop
+//<Button>{item.skills.skill1}</Button>

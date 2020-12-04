@@ -8,15 +8,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .JustParkCardContainer {
-  width: 25%;
+  width: 100%;
 }
 
 .JustParkCard {
   font-size: $card-small;
-  height: 180px;
+  height: 80px;
   text-shadow: 1.5px 1.5px 1px #1fa637;
   display: flex;
   align-items: center;
@@ -28,12 +29,17 @@
   font-size: $card-smaller;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 768px) {
   .JustParkCard {
     font-size: $card-mid;
+    height: 180px;
   }
 
   .JustParkCardDate {
     font-size: $card-small;
+  }
+
+  .JustParkCardContainer {
+    width: 25%;
   }
 }

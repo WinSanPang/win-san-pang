@@ -18,12 +18,10 @@ const WorkModal = ({
 }) => {
   return (
     <>
-      <Subheader className={classes.WorkModalSubheader}>
-        {companyName}
-      </Subheader>
+      <Subheader>{companyName}</Subheader>
       <div className={classes.WorkModalContainer}>
         <ul className={classes.WorkModalList}>
-          <h3>Key responsibilities:</h3>
+          <h3 className={classes.WorkModalListTitle}>Key responsibilities:</h3>
           <li className={classes.WorkModalListItem}>{point1}</li>
           <li className={classes.WorkModalListItem}>{point2}</li>
           <li className={classes.WorkModalListItem}>{point3}</li>
@@ -33,7 +31,7 @@ const WorkModal = ({
         </ul>
         <Photograph modal>
           <img src={photo} alt={alt}></img>
-          <p>{photoCaption}</p>
+          <p className={classes.WorkModalPhotoCaption}>{photoCaption}</p>
         </Photograph>
       </div>
     </>

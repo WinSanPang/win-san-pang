@@ -3,11 +3,11 @@ import React from "react";
 import classes from "./Subheader.module.scss";
 
 const Subheader = ({ children, className }) => (
-  <header className={`${classes.Subheader} ${className}`}>{children}</header>
+  <h1 className={`${classes.Subheader} ${className}`}>{children}</h1>
 );
 
 Subheader.defaultProps = {
-  className: ""
+  className: "",
 };
 
 export default Subheader;

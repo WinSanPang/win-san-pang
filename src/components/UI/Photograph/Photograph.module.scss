@@ -1,62 +1,13 @@
 @import "../../../scss/_fonts.scss";
 
 .Photograph {
-  padding: 20px;
-  margin: 0 0px 0px 20px;
-  max-height: 200px;
-  max-width: 150px;
+  padding: 20px 20px 40px 20px;
+  margin: 0 0 40px 0;
+  max-height: 250px;
+  max-width: 200px;
   background: #ededed;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: black;
-}
-
-.Photograph:first-child,
-.Photograph:nth-child(7) {
-  -ms-transform: rotate(20deg); /* IE 9 */
-  transform: rotate(15deg);
-  z-index: 1;
-}
-
-.Photograph:nth-child(3),
-.Photograph:nth-child(9) {
-  margin-top: 100px;
-}
-
-.Photograph:nth-child(3):hover,
-.Photograph:nth-child(9):hover {
-  margin-top: 110px;
-}
-
-.Photograph:nth-child(5),
-.Photograph:nth-child(11) {
-  -ms-transform: rotate(-20deg); /* IE 9 */
-  transform: rotate(-15deg);
-}
-
-.Photograph:first-child:hover,
-.Photograph:nth-child(7):hover {
-  margin-right: 50px;
-  margin-left: 50px;
-}
-
-.Photograph:nth-child(5):hover,
-.Photograph:nth-child(11):hover {
-  margin-left: 70px;
-}
-
-.Photograph:first-child,
-.Photograph:nth-child(5),
-.Photograph:nth-child(7),
-.Photograph:nth-child(11) {
-  margin-top: 30px;
-}
-
-.Photograph:first-child:hover,
-.Photograph:nth-child(5):hover,
-.Photograph:nth-child(7):hover,
-.Photograph:nth-child(11):hover {
-  margin-top: 105px;
-  margin-bottom: 20px;
 }
 
 .Photograph img {
@@ -72,6 +23,7 @@
 
 .Photograph p {
   font-size: $caption-text-small;
+  margin: 10px 0 5px 0;
 }
 
 .ModalPhotograph {
@@ -90,12 +42,12 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (min-width: 850px) {
+@media (min-width: 768px) {
   .Photograph {
-    max-height: 300px;
-    max-width: 300px;
-    padding: 40px 40px 150px 40px;
-    margin-bottom: 20px;
+    max-height: 150px;
+    max-width: 200px;
+    padding: 30px 30px 160px 30px;
+    margin: 20px;
   }
 
   .Photograph h3 {
@@ -116,7 +68,7 @@
   }
 
   .ModalPhotograph {
-    padding: 20px 20px 60px 20px;
+    padding: 20px 20px 120px 20px;
     max-height: 200px;
     max-width: 200px;
   }
@@ -125,6 +77,65 @@
 @media (min-width: 1250px) {
   .Photograph {
     margin: 0px 20px 50px 20px;
+    padding: 30px 30px 150px 30px;
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .Photograph p {
+    font-size: $caption-text-large;
+    margin: 20px;
+  }
+
+  .Photograph:first-child,
+  .Photograph:nth-child(7) {
+    -ms-transform: rotate(15deg); /* IE 9 */
+    transform: rotate(15deg);
+    z-index: 1;
+  }
+
+  .Photograph:nth-child(3),
+  .Photograph:nth-child(9) {
+    margin-top: 100px;
+  }
+
+  .Photograph:nth-child(3):hover,
+  .Photograph:nth-child(9):hover {
+    margin-top: 100px;
+  }
+
+  .Photograph:nth-child(5),
+  .Photograph:nth-child(11) {
+    -ms-transform: rotate(-15deg); /* IE 9 */
+    transform: rotate(-15deg);
+  }
+
+  .Photograph:first-child:hover,
+  .Photograph:nth-child(7):hover {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .Photograph:nth-child(5):hover,
+  .Photograph:nth-child(11):hover {
+    margin-left: 70px;
+  }
+
+  .Photograph:first-child,
+  .Photograph:nth-child(5),
+  .Photograph:nth-child(7),
+  .Photograph:nth-child(11) {
+    margin-top: 30px;
+  }
+
+  .Photograph:first-child:hover,
+  .Photograph:nth-child(3):hover,
+  .Photograph:nth-child(5):hover,
+  .Photograph:nth-child(7):hover,
+  .Photograph:nth-child(9):hover,
+  .Photograph:nth-child(11):hover {
+    transform: scale(1.1);
+    padding-top: 30px;
   }
 
   .ModalPhotograph {

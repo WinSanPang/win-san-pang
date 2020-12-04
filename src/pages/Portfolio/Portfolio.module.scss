@@ -3,8 +3,7 @@
 
 .Portfolio {
   text-align: center;
-  padding: 120px 100px;
-  width: 90vw;
+  padding: 50px 40px;
 }
 
 .PortfolioSections {
@@ -15,17 +14,7 @@
 }
 
 .PortfolioContainer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  justify-content: center;
-}
-
-.PortfolioCard {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 30px;
+  margin-right: 20px;
 }
 
 .PortfolioImages {
@@ -33,16 +22,93 @@
   align-self: center;
 }
 
+.TheCerberusAffairPortfolioCard, .ConnectedLearningPortfolioCard
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.TheCerberusAffairPortfolioCard {
+  background-image: linear-gradient($the-cerberus-affair, $black);
+}
+
+.ConnectedLearningPortfolioCard {
+  background-image: linear-gradient($connected-learning-orange, $connected-learning-teal);
+}
+
 .TheCerberusAffair {
-  font: 500 50px $the-cerberus-affair-font;
-  color: red;
+  font: $the-cerberus-affair-text-small;
+  color: $the-cerberus-affair-secondary;
   text-shadow: -3px 1px 3px $black, 3px 3px 3px $black, 3px -2px 0 $black,
   -1px -1px 0 $black;
 }
 
 .ConnectedLearning {
-  font: 500 50px $connected-learning-font;
+  font: $connected-learning-small;
   color: $connected-learning-orange;
   text-shadow: -3px 1px 3px $connected-learning-teal, 3px 3px 3px $connected-learning-teal, 3px -2px 0 $connected-learning-teal,
   -1px -1px 0 $connected-learning-teal;
+}
+
+@media (min-width: 768px) {
+  .Portfolio {
+    padding: 50px 40px;
+  }
+
+  .TheCerberusAffair {
+    font: $the-cerberus-affair-text;
+  }
+
+  .ConnectedLearning {
+    font: $connected-learning;
+  }
+}
+
+@media (min-width: 1000px) {
+  .PortfolioContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .TheCerberusAffairPortfolioCard, .ConnectedLearningPortfolioCard
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .Portfolio {
+    padding: 120px 100px;
+  }
+
+  .PortfolioContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .TheCerberusAffairPortfolioCard, .ConnectedLearningPortfolioCard
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 30px;
+  }
+
+  .TheCerberusAffair {
+    font: $the-cerberus-affair-text-large;
+  }
+
+  .ConnectedLearning {
+    font: $connected-learning-large;
+  }
 }

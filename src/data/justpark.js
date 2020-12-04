@@ -66,7 +66,7 @@ export const justpark = [
     },
     photo: CHNightOut,
     photoCaption:
-      "Getting in the Chrismas spirit with fellow Customer Happiness colleagues 🤶🎅☃️",
+      "Getting in the Chrismas spirit with fellow Customer Happiness colleagues 🤶🎅️",
     alt: "christmas-party-ch-team-photo",
   },
   {

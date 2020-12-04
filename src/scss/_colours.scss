@@ -4,22 +4,27 @@ $white: white;
 $black: #151515;
 $blue: steelblue;
 $bright-blue: #78caff;
-$light-blue: #3E9CDA;
-$dark-blue: #02162f;
+$light-blue: #3e9cda;
 $sea-blue: #06515b;
-$red: red;
-$teal: #07686A;
-$orange: #E68D05;
+$green: green;
+$dark-green: #095524;
+$purple: #6b0080;
+$gold: #ff9f00;
+$red: #c00000;
+$medium-red: #d90000;
+$teal: #07686a;
+$orange: #e68d05;
 
 // Allias
 
 $primary: $blue !default;
 $secondary: $light-blue;
-$tertiary: $dark-blue;
+$tertiary: $green;
 $background-primary: $sea-blue;
 $text-primary: $white;
 $text-secondary: $black;
 $header-primary: $white;
 $the-cerberus-affair: $red;
+$the-cerberus-affair-secondary: $medium-red;
 $connected-learning-teal: $teal;
 $connected-learning-orange: $orange;

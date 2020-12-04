@@ -1,20 +1,12 @@
 .Home {
   text-align: center;
-  padding: 120px 100px;
-  width: 90vw;
-}
-
-.HomeHeader {
-  display: flex;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
+  padding: 50px 40px;
 }
 
 .Me {
   width: 150px;
   border-radius: 50%;
-  margin-left: 50px;
+  border: 1px solid white;
 }
 
 .HomeSections {
@@ -26,5 +18,36 @@
 .CardLink {
   text-decoration: none;
   color: white;
-  width: 30%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .Home {
+    padding: 50px 40px;
+  }
+
+  .Me {
+    margin-left: 50px;
+  }
+
+  .HomeHeader {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .CardLink {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .Home {
+    padding: 120px 100px;
+  }
+
+  .CardLink {
+    width: 30%;
+  }
 }

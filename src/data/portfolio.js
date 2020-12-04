@@ -1,4 +1,4 @@
-export const portfolio = [
+export const portfolios = [
   {
     name: "The Cerberus Affair",
     brand: "TCA",
@@ -13,6 +13,12 @@ export const portfolio = [
       "\n" +
       "I was solely responsible for the entire creation of the website, from the design through to building and deploying it to production. The website was built using React and my inspiration for the design came from reading the book as research for the project. This ensured that the website would be an accurate representation of the story and enhance readers' interest in the book. You can view the website and find out more about The Cerberus Affair by visiting",
     link: "https://www.thecerberusaffair.com/",
+    skills: {
+      skill1: "React",
+      skill2: "React Hooks",
+      skill3: "SCSS",
+      skill4: "Photoshop",
+    },
   },
   {
     name: "Connected Learning",
@@ -28,5 +34,10 @@ export const portfolio = [
       "\n" +
       "On the Hackthon, I took the lead in forming the ConnectEducate team and together, with a group of eight other women, we created Connected Learning, a user-friendly online learning platform designed to provide parents with a focused platform of resources and, most importantly, make it possible for them to connect with vetted mentors who could support their children's educational needs. The platform was built using React and Ruby on Rails and can be found at",
     link: "https://connect.maslaha.org/about-us",
+    skills: {
+      skill1: "React",
+      skill2: "SCSS",
+      skill3: "Photoshop",
+    },
   },
 ];

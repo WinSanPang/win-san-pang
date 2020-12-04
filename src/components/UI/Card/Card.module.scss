@@ -3,8 +3,8 @@
 .Card {
   border: 2px solid white;
   border-radius: 25px;
-  padding: 50px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
   font-size: $card-small;
   color: white;
 }
@@ -24,5 +24,7 @@
 @media (min-width: 1250px) {
   .Card {
     font-size: $card-large;
+    padding: 50px;
+    margin: 20px;
   }
 }

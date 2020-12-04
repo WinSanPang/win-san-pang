@@ -1,4 +1,10 @@
+@import "./scss/colours.scss";
+
 .App {
-  background-image: linear-gradient(to bottom right, steelblue 0%, green 100%);
+  background-image: linear-gradient(
+    to bottom right,
+    $primary 0%,
+    $tertiary 100%
+  );
   overflow-x: hidden;
 }

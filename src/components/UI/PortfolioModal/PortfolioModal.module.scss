@@ -1,4 +1,6 @@
+@import "../../../scss/fonts.scss";
 @import "../../../scss/colours.scss";
+
 
 .PortfolioModalPhotosContainer {
   display: flex;
@@ -6,9 +8,9 @@
 }
 
 .PortfolioModalDescription {
-  margin: 0 10%;
+  margin: 20% 5%;
   line-height: 1.5;
-  white-space: pre-line;
+  font-size: $portfolio-modal-text-small;
 }
 
 .TheCerberusAffairLink,
@@ -27,4 +29,19 @@
 
 .ConnectedLearningLink {
   background-image: linear-gradient(45deg, $connected-learning-teal, $connected-learning-orange);
+}
+
+@media (min-width: 768px) {
+  .PortfolioModalDescription {
+    margin: 10% 5%;
+    font-size: $portfolio-modal-text;
+  }
+}
+
+@media (min-width: 1250px) {
+  .PortfolioModalDescription {
+    margin: 0 10%;
+    line-height: 1.5;
+    font-size: $portfolio-modal-text-large;
+  }
 }

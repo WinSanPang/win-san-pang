@@ -13,12 +13,17 @@ $header-text: 500 80px $primary-font;
 $header-text-large: 500 100px $primary-font;
 
 $subheader-text-small: 200 30px $primary-font;
-$subheader-text: 200 60px $primary-font;
+$subheader-text: 200 35px $primary-font;
+$subheader-text-medium: 200 40px $primary-font;
 $subheader-text-large: 200 60px $primary-font;
 
-$work-modal-subheader-text-small: 20px;
-$work-modal-subheader-text: 40px;
-$work-modal-subheader-text-large: 50px;
+$paragraph-small: 10px;
+$paragraph: 16px;
+$paragraph-large: 17px;
+
+$button-text-small: 10px;
+$button-text: 20px;
+$button-text-large: 25px;
 
 $card-smaller: 15px;
 $card-small: 20px;
@@ -27,34 +32,55 @@ $card: 30px;
 $card-big: 35px;
 $card-large: 40px;
 
+$cloud-text-small: 11px;
+$cloud-text: 20px;
+$cloud-text-large: 30px;
+
+$cloud-stars-small: 5px;
+$cloud-stars: 8px;
+$cloud-stars-large: 20px;
+
+$work-modal-list-title-small: 15px;
+$work-modal-list-title: 20px;
+$work-modal-list-title-large: 25px;
+
+$work-modal-list-small: 10px;
+$work-modal-list: 13px;
+$work-modal-list-large: 15px;
+
+$work-modal-photo-caption-small: 10px;
+$work-modal-photo-caption: 11px;
+$work-modal-photo-caption-large: 15px;
+
 $chapter-title-small: 700 20px $book-font;
 $chapter-title: 700 25px $book-font;
 $chapter-title-large: 700 30px $book-font;
 
+$book-text-small: 12px;
+$book-text: 13px;
+$book-text-large: 16px;
 $book-large: 700 3em/0.65 $book-font;
 
 $photograph-text-small: 500 20px $primary-font;
-$photograph-text: 500 40px $primary-font;
+$photograph-text: 500 25px $primary-font;
+$photograph-text-large: 500 40px $primary-font;
 
 $caption-text-small: 10px;
 $caption-text: 15px;
+$caption-text-large: 16px;
 
-$profile-photo-text: 500 25px $primary-font;
-$profile-photo-text-large: 500 30px $primary-font;
+$portfolio-modal-text-small: 13px;
+$portfolio-modal-text: 13px;
+$portfolio-modal-text-large: 16px;
 
-$quote-marks-small: 400 80px "Great Vibes", cursive;
-$quote-marks: 400 120px "Great Vibes", cursive;
-$quote-marks-large: 400 200px "Great Vibes", cursive;
+$the-cerberus-affair-text-small: 500 25px $the-cerberus-affair-font;
+$the-cerberus-affair-text: 500 30px $the-cerberus-affair-font;
+$the-cerberus-affair-text-large: 500 50px $the-cerberus-affair-font;
 
-$paragraph-small: 10px;
-$paragraph: 16px;
-$paragraph-large: 17px;
-
-$profile-quote-small: 10px;
-$profile-quote: 16px;
+$connected-learning-small: 500 25px $connected-learning-font;
+$connected-learning: 500 30px $connected-learning-font;
+$connected-learning-large: 500 50px $connected-learning-font;
 
 $footer-small: 10px;
 $footer: 14px;
 
-$button-text-small: 200 20px $primary-font;
-$button-text: 200 60px $primary-font;

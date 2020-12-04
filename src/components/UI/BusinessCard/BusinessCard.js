@@ -2,7 +2,7 @@
 Original Phone, Envelope, LinkedIn GitHub, and Twitter FontAwesomeIcons made by Font Awesome, available for free on their website, MIT licensed with attribution.
 Font Awesome free licence: https://fontawesome.com/license/free
 
-Th brand icons are a trademark of the respective owners. The use of this trademark does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa.
+The brand icons are a trademark of the respective owners. The use of this trademark does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify,
 merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -26,7 +26,9 @@ const BusinessCard = () => {
       <div className={classes.BusinessCardContainer}>
         <div className={classes.BusinessCardLeft}>
           <img src={Me} alt="Win San Pang" className={classes.Me} />
-          <Subheader>Win San Pang</Subheader>
+          <Subheader className={classes.BusinessCardSubheader}>
+            Win San Pang
+          </Subheader>
           <p>Associate Frontend Engineer</p>
         </div>
         <div className={classes.BusinessCardDivider} />

@@ -6,6 +6,14 @@
   color: #e5e5e5;
 }
 
+.BookText {
+  font-size: $book-text-small;
+}
+
+br {
+  display: none;
+}
+
 /*** OPEN BOOK ***/
 .openBook {
   background: #fff;
@@ -143,7 +151,6 @@
   background: linear-gradient(to bottom, rgba(255,134,9,1) 0%,rgba(255,177,34,0.5) 60%,rgba(255,177,34,1) 100%);
 }
 
-/*** MEDIA QUERIES ***/
 @media (min-width: 850px) {
 
   .openBook {
@@ -285,4 +292,13 @@
     padding-left: 4em;
   }
 
+  @media (min-width: 1200px) {
+    .BookText {
+      font-size: $book-text-large;
+    }
+
+    br {
+      display: block;
+    }
+  }
 }

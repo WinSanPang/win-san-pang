@@ -1,7 +1,6 @@
 .Hobbies {
   text-align: center;
-  padding: 120px 100px;
-  width: 90vw;
+  padding: 50px 40px;
 }
 
 .HobbiesHeader {
@@ -15,5 +14,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0px 100px;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .Hobbies {
+    padding: 50px 40px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .Hobbies {
+    padding: 120px 100px;
+  }
+
+  .HobbiesPhotographs {
+    margin: 0px 100px;
+  }
 }

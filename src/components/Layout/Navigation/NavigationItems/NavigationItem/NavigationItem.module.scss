@@ -1,12 +1,10 @@
 @import "../../../../../scss/colours";
 
 .NavigationItem {
-  margin: 10px 0;
+  margin: 10px 0px;
   box-sizing: border-box;
   width: 100%;
-  padding-bottom: 5%;
-  /* background-image: linear-gradient(to bottom right, $primary, $primary 50%, black 50%, black);
-  border-right: 3px solid white; */
+  padding: 5% 15%;
 }
 
 .NavigationItem a {
@@ -17,49 +15,59 @@
   display: flex;
 }
 
-.NavigationItem:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  margin: 0 50px;
-}
-
-.NavigationItem:last-child:after {
-  opacity: 0;
-}
-
 .NavigationItem a:hover,
-.NavigationItem a:active,
-.NavigationItem a.active {
-  color: $primary;
+.NavigationItem a:focus {
+  color: $sea-blue;
+  height: 100%;
 }
 
 @media (min-width: 500px) {
   .NavigationItem {
-    margin: 0 15px;
-    display: flex;
     height: 90%;
     width: auto;
+    display: flex;
     align-items: center;
+    margin: 0 15px;
+    padding: 0;
   }
 
   .NavigationItem a {
-    color: $text-primary;
     height: 90%;
     padding: 10px;
   }
 
-  .NavigationItem a:hover {
-    cursor: pointer;
+  .NavigationItemHome:hover,
+  .NavigationItemHome:focus {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🏡</text></svg>") 16 0,auto; /*!emojicursor.app*/
   }
 
-  .NavigationItem a:hover,
-  .NavigationItem a:active,
-  .NavigationItem a.active {
-    border-bottom: solid $primary;
-    color: $primary;
-    height: 100%;
-    padding: 10px;
+  .NavigationItemSkills:hover,
+  .NavigationItemSkills:focus {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>💻</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+
+  .NavigationItemWork:hover,
+  .NavigationItemWork:focus {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👨🏻‍💻</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+
+  .NavigationItemEducation:hover,
+  .NavigationItemEducation:focus {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎓</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+
+  .NavigationItemHobbies:hover,
+  .NavigationItemHobbies:focus {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🏊🏻</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+
+  .NavigationItemPortfolio:hover,
+  .NavigationItemPortfolio:focus {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>📂</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+
+  .NavigationItemContact:hover,
+  .NavigationItemContact:focus {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>📱</text></svg>") 16 0,auto; /*!emojicursor.app*/
   }
 }
