@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import classes from "./App.module.scss";
 import Layout from "./components/Layout/Layout";
@@ -13,7 +13,6 @@ import Skills from "./pages/Skills/Skills";
 
 function App() {
   return (
-    <HashRouter basename="/">
       <div className={classes.App}>
         <Layout>
           <Switch>
@@ -27,7 +26,6 @@ function App() {
           </Switch>
         </Layout>
       </div>
-    </HashRouter>
   );
 }
 
