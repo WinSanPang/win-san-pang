@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Me from "../../../assets/images/Me-Logo.png";
 import classes from "./Logo.module.scss";
 
 const Logo = () => (
   <div className={classes.Logo}>
-    <a href="/">
+    <Link to="/">
       <img src={Me} alt="Win San Pang" />
-    </a>
+    </Link>
   </div>
 );
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import classes from "./App.module.scss";
 import Layout from "./components/Layout/Layout";
@@ -13,19 +13,21 @@ import Skills from "./pages/Skills/Skills";
 
 function App() {
   return (
-    <div className={classes.App}>
-      <Layout>
-        <Switch>
-          <Route path="/" exact render={() => <Home />} />
-          <Route path="/skills" exact render={() => <Skills />} />
-          <Route path="/work" exact render={() => <Work />} />
-          <Route path="/education" exact render={() => <Education />} />
-          <Route path="/hobbies" exact render={() => <Hobbies />} />
-          <Route path="/portfolio" exact render={() => <Portfolio />} />
-          <Route path="/contact" exact render={() => <Contact />} />
-        </Switch>
-      </Layout>
-    </div>
+    <HashRouter basename="/">
+      <div className={classes.App}>
+        <Layout>
+          <Switch>
+            <Route path="/" exact render={() => <Home />} />
+            <Route path="/skills" exact render={() => <Skills />} />
+            <Route path="/work" exact render={() => <Work />} />
+            <Route path="/education" exact render={() => <Education />} />
+            <Route path="/hobbies" exact render={() => <Hobbies />} />
+            <Route path="/portfolio" exact render={() => <Portfolio />} />
+            <Route path="/contact" exact render={() => <Contact />} />
+          </Switch>
+        </Layout>
+      </div>
+    </HashRouter>
   );
 }
 
